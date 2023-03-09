@@ -4,6 +4,10 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity
 @Getter
 @Setter
@@ -16,13 +20,33 @@ public class LagaltUser {
     private String lagalt_user_name;
 
 
+    //Relationships
+    @ManyToMany  //owner
+    @JoinTable(
+            joinColumns =
+                    {@JoinColumn(name = "lagalt_user_id")},
+            inverseJoinColumns =
+                    {@JoinColumn(name = "skill_id")}
+    )
+    private Set<Skill> skills;
 
-    //to string method
-    @Override
-    public String toString() {
-        return "LagaltUser{" +
-                "lagalt_user_id=" + lagalt_user_id +
-                ", lagalt_user_name='" + lagalt_user_name + '\'' +
-                '}';
-    }
+    @ManyToMany //owner
+    @JoinTable(
+            joinColumns =
+                    {@JoinColumn(name = "lagalt_user_id")},
+            inverseJoinColumns =
+                    {@JoinColumn(name = "project_id")}
+    )
+    private Set<Project> projects;
+
+
+    @OneToMany(mappedBy="lagaltUsers", fetch = FetchType.EAGER)
+    private Collection<Request> requests;
+
+
+
+
+
+
+
 }

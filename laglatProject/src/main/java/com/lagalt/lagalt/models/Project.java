@@ -4,6 +4,9 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.Collection;
+import java.util.Set;
+
 @Entity
 @Getter
 @Setter
@@ -22,15 +25,20 @@ public class Project {
     private String repo_url;
 
 
-    //to string method
-    @Override
-    public String toString() {
-        return "Project{" +
-                "project_id=" + project_id +
-                ", title='" + title + '\'' +
-                ", topic='" + topic + '\'' +
-                ", stage='" + stage + '\'' +
-                ", url='" + repo_url + '\'' +
-                '}';
-    }
+    //Relationships
+    @ManyToMany //owner
+    @JoinTable(
+            joinColumns =
+                    {@JoinColumn(name = "project_id")},
+            inverseJoinColumns =
+                    {@JoinColumn(name = "skill_id")}
+    )
+    private Set<Skill> skills;
+
+    @ManyToMany(mappedBy = "projects")  //direction
+    private Set<LagaltUser> lagaltUsers;
+
+    @OneToMany(mappedBy="project", fetch = FetchType.EAGER)
+    private Collection<Request> requests_1;
+
 }

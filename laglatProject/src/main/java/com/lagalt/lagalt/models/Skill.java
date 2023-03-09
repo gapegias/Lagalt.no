@@ -4,6 +4,10 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity
 @Getter
 @Setter
@@ -17,13 +21,15 @@ public class Skill {
     private String skill_name;
 
 
-    //to string method
+    //Relationships
+    @ManyToMany(mappedBy = "skills")  //direction
+    private Set<LagaltUser> lagaltUsers;
 
-    @Override
-    public String toString() {
-        return "Skill{" +
-                "id=" + skill_id +
-                ", skill_name='" + skill_name + '\'' +
-                '}';
-    }
+    @ManyToMany(mappedBy = "skills")  //direction
+    private Set<Project> projects;
+
+
+
+
+
 }
