@@ -43,10 +43,13 @@ public class LagaltUser {
     @OneToMany(mappedBy="lagaltUsers", fetch = FetchType.EAGER)
     private Collection<Request> requests;
 
+    @Override
+    public String toString() {
+        return "LagaltUser{" +
+                "lagalt_user_id=" + lagalt_user_id +
+                ", lagalt_user_name='" + lagalt_user_name + '\'' +
 
 
-
-
-
-
+                '}';
+    }
 }
