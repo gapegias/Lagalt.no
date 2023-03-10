@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 
 @Entity
 @Getter
@@ -18,7 +19,19 @@ public class Message {
     @Column(nullable = false)
     private String text;
 
-    private Date date;
+    @Column(name = "timestamp", nullable = false, updatable = false, insertable = false,
+            columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
+    private Timestamp date;
+
+    //relations
+    @ManyToOne
+    @JoinColumn(name="user_id")
+    private LagaltUser lagaltUsers;
+
+
+    @ManyToOne
+    @JoinColumn(name="project_id")
+    private Project project;
 
 
 }

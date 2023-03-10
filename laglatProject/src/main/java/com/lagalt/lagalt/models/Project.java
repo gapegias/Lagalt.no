@@ -20,6 +20,9 @@ public class Project {
     @Column(nullable = false)
     private String topic;
 
+
+    @Column(name = "stage", nullable = false, insertable = false,
+            columnDefinition = "varchar(30) default 'initial'")
     private String stage;
 
     private String repo_url;
