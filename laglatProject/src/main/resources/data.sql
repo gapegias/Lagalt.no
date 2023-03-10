@@ -7,7 +7,7 @@ INSERT INTO skill ("skill_name") VALUES ('Writing'),('dancing');
 
 
 --Project
-INSERT INTO project ("title","topic","repo_url") VALUES ('deliShop','WebDevelopment','https//:github.com/something');
+INSERT INTO project ("title","repo_url") VALUES ('deliShop','https//:github.com/something');
 
 --Message
 INSERT INTO message VALUES (1,CURRENT_TIMESTAMP,'this project is great',2,1);
