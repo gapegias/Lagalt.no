@@ -1,8 +1,10 @@
 package com.lagalt.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -43,11 +45,14 @@ public class Project {
     @Column(name = "project_owner", nullable = false, length = 50)
     private String project_owner;
     // Table's relationships
+    @JsonIgnore
     @ManyToMany(mappedBy = "projects")  //direction
     private Set<LagaltUser> users;
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "topic_id")
     private Topic topic;
+    @JsonIgnore
     @ManyToMany //owner
     @JoinTable(
             name = "project_skills",
@@ -55,27 +60,25 @@ public class Project {
             inverseJoinColumns = {@JoinColumn(name = "skill_id")}
     )
     private Set<Skill> skills;
+    @JsonIgnore
     @OneToMany(mappedBy="project", fetch = FetchType.EAGER)
     private Set<Request> requests;
+    @JsonIgnore
     @OneToMany(mappedBy="project", fetch = FetchType.EAGER)
     private List<Message> messages;
     // Table's method for record info
-    public String toString(){
-        String usersStr = users.stream().map(user -> user.getUser_name())
-                                        .collect(Collectors.toSet())
-                                        .toString();
-        String skillsStr = skills.stream().map(skill -> skill.getSkill_name())
-                                          .collect(Collectors.toSet())
-                                          .toString();
-        String requestsStr = requests.stream().map(request -> request.getRequest_text())
-                                              .collect(Collectors.toSet())
-                                              .toString();
-        String messagesStr = messages.stream().map(message -> message.getMessage_text())
-                                              .collect(Collectors.toSet())
-                                              .toString();
-        return "{ \nid: " + project_id + ", \nowner: " + project_owner + ", \nstage: " + project_stage +
-               ", \ntitle: " + project_title + ", \npurpose: " + project_purpose + ", \nrepo: " + project_repo_url +
-               ", \ntopic: " + topic.getTopic_name() + ", \nusers: "+ usersStr + ", \nskills: " + skillsStr +
-               ", \nrequests: " + requestsStr + ", \nmessages: " + messagesStr + " \n}";
-    }
+//    public String toString(){
+//        String usersStr = users.stream().map(user -> user.getUser_name())
+//                                        .collect(Collectors.joining(", "));
+//        String skillsStr = skills.stream().map(skill -> skill.getSkill_name())
+//                                          .collect(Collectors.joining(", "));
+//        String requestsStr = requests.stream().map(request -> request.getRequest_text())
+//                                              .collect(Collectors.joining(", "));
+//        String messagesStr = messages.stream().map(message -> message.getMessage_text())
+//                                              .collect(Collectors.joining(", "));
+//        return "{ \nid: " + project_id + ", \nowner: " + project_owner + ", \nstage: " + project_stage +
+//               ", \ntitle: " + project_title + ", \npurpose: " + project_purpose + ", \nrepo: " + project_repo_url +
+//               ", \ntopic: " + topic.getTopic_name() + ", \nusers: { "+ usersStr + " }, \nskills: { " + skillsStr +
+//               " }, \nrequests: { " + requestsStr + " }, \nmessages: { " + messagesStr + " } \n}";
+//    }
 }

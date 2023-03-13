@@ -30,8 +30,7 @@ public class Topic {
     // Table's method for record info
     public String toString(){
         String projectsStr = projects.stream().map(project -> project.getProject_title())
-                                              .collect(Collectors.toSet())
-                                              .toString();
-        return "{ \nid: " + topic_id + ", \nname: " + topic_name + ", \nprojects: " + projectsStr + " \n}";
+                                              .collect(Collectors.joining(", "));
+        return "{ id: " + topic_id + ", name: " + topic_name + ", projects: " + projectsStr + " }";
     }
 }
