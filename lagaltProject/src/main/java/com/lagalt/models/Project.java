@@ -3,7 +3,6 @@ package com.lagalt.models;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -63,16 +62,20 @@ public class Project {
     // Table's method for record info
     public String toString(){
         String usersStr = users.stream().map(user -> user.getUser_name())
-                                        .collect(Collectors.joining(", "));
+                                        .collect(Collectors.toSet())
+                                        .toString();
         String skillsStr = skills.stream().map(skill -> skill.getSkill_name())
-                                          .collect(Collectors.joining(", "));
+                                          .collect(Collectors.toSet())
+                                          .toString();
         String requestsStr = requests.stream().map(request -> request.getRequest_text())
-                                              .collect(Collectors.joining(", "));
+                                              .collect(Collectors.toSet())
+                                              .toString();
         String messagesStr = messages.stream().map(message -> message.getMessage_text())
-                                              .collect(Collectors.joining(", "));
+                                              .collect(Collectors.toSet())
+                                              .toString();
         return "{ \nid: " + project_id + ", \nowner: " + project_owner + ", \nstage: " + project_stage +
                ", \ntitle: " + project_title + ", \npurpose: " + project_purpose + ", \nrepo: " + project_repo_url +
-               ", \ntopic: " + topic.getTopic_name() + ", \nusers: { "+ usersStr + " }, \nskills: { " + skillsStr +
-               " }, \nrequests: { " + requestsStr + " }, \nmessages: { " + messagesStr + " } \n}";
+               ", \ntopic: " + topic.getTopic_name() + ", \nusers: "+ usersStr + ", \nskills: " + skillsStr +
+               ", \nrequests: " + requestsStr + ", \nmessages: " + messagesStr + " \n}";
     }
 }

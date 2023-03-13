@@ -50,20 +50,19 @@ public class LagaltUser {
     private List<Message> messages;
     // Table's method for record info
     public String toString(){
-        // String projectsStr = projects.stream().map(project -> project.getProject_title())
-        //                                       .collect(Collectors.joining(", "));
-        String projectsStr = projects.stream()
-                .map(project -> project.getUsers().stream()
-                        .map(user -> user.getUser_id()).collect(Collectors.toSet()).toString())
-                                              .collect(Collectors.joining(", "));
+        String projectsStr = projects.stream().map(project -> project.getProject_title())
+                                              .collect(Collectors.toSet())
+                                              .toString();
         String skillsStr = skills.stream().map(skill -> skill.getSkill_name())
-                                          .collect(Collectors.joining(", "));
+                                          .collect(Collectors.toSet())
+                                          .toString();
         String requestsStr = requests.stream().map(request -> request.getRequest_text())
-                                              .collect(Collectors.joining(", "));
+                                              .collect(Collectors.toSet())
+                                              .toString();
         String messagesStr = messages.stream().map(message -> message.getMessage_text())
-                                              .collect(Collectors.joining(", "));
-        return "{ \nid: " + user_id + ", \nname: " + user_name + ", \nprojects: { " + projectsStr +
-               " }, \nskills: { " + skillsStr + " }, \nrequests: { " + requestsStr +
-               " }, \nmessages: { " + messagesStr + " } \n}";
+                                              .collect(Collectors.toSet())
+                                              .toString();
+        return "{ \nid: " + user_id + ", \nname: " + user_name + ", \nprojects: " + projectsStr +
+               ", \nskills: " + skillsStr + ", \nrequests: " + requestsStr + ", \nmessages: " + messagesStr + " \n}";
     }
 }
