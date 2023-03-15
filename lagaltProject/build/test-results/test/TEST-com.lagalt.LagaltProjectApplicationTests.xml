@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.lagalt.LagaltProjectApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-12T21:36:56" hostname="DESKTOP-0QL2DED" time="1.054">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.lagalt.LagaltProjectApplicationTests" time="1.054"/>
+  <system-out><![CDATA[23:36:24.752 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [LagaltProjectApplicationTests]: using SpringBootContextLoader
+23:36:24.785 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.lagalt.LagaltProjectApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:36:24.793 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.lagalt.LagaltProjectApplicationTests]: LagaltProjectApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:36:25.065 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [LagaltProjectApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+23:36:25.410 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\User\Desktop\lagaltProject\build\classes\java\main\com\lagalt\LagaltProjectApplication.class]
+23:36:25.419 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.lagalt.LagaltProjectApplication for test class com.lagalt.LagaltProjectApplicationTests
+23:36:26.086 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [LagaltProjectApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+23:36:26.111 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [LagaltProjectApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-03-12T23:36:32.515+02:00  INFO 5744 --- [    Test worker] c.lagalt.LagaltProjectApplicationTests   : Starting LagaltProjectApplicationTests using Java 17.0.1 with PID 5744 (started by User in C:\Users\User\Desktop\lagaltProject)
+2023-03-12T23:36:32.525+02:00  INFO 5744 --- [    Test worker] c.lagalt.LagaltProjectApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2023-03-12T23:36:36.316+02:00  INFO 5744 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-12T23:36:36.637+02:00  INFO 5744 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 290 ms. Found 6 JPA repository interfaces.
+2023-03-12T23:36:38.681+02:00  INFO 5744 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-12T23:36:38.991+02:00  INFO 5744 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-03-12T23:36:40.809+02:00  INFO 5744 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-12T23:36:41.659+02:00  INFO 5744 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4fc6e776
+2023-03-12T23:36:41.666+02:00  INFO 5744 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-12T23:36:41.816+02:00  INFO 5744 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2023-03-12T23:36:41.825+02:00  WARN 5744 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: PostgreSQL95Dialect has been deprecated; use org.hibernate.dialect.PostgreSQLDialect instead
+Hibernate: alter table if exists lagalt_user_projects drop constraint if exists FKt4noww26jd60l8tinwbxupum9
+Hibernate: alter table if exists lagalt_user_projects drop constraint if exists FK9a1cgflf11x3ter2meip7kk94
+Hibernate: alter table if exists lagalt_user_skills drop constraint if exists FKbls9pcwcd49l6cc6h6yuc4kxs
+Hibernate: alter table if exists lagalt_user_skills drop constraint if exists FKf7mpw64im0x95b7q7v0xa266w
+Hibernate: alter table if exists message drop constraint if exists FK6rdq6kr4628grwvpxyuwnk0er
+Hibernate: alter table if exists message drop constraint if exists FKfefs80jmne4vmp8c5h6xvlnch
+Hibernate: alter table if exists project drop constraint if exists FK4qx3ehgfpk6owgmi05bxdl6wv
+Hibernate: alter table if exists project_skills drop constraint if exists FK79wlc9nj5o6m744darcl6okej
+Hibernate: alter table if exists project_skills drop constraint if exists FKmwdeg5ekyeabf6iuyhr7i9mkp
+Hibernate: alter table if exists request drop constraint if exists FKkvq26sm6o0fejk6syyfhygl1q
+Hibernate: alter table if exists request drop constraint if exists FK93buqw7ugnaqggnw3b67mw05i
+Hibernate: drop table if exists lagalt_user cascade
+Hibernate: drop table if exists lagalt_user_projects cascade
+Hibernate: drop table if exists lagalt_user_skills cascade
+Hibernate: drop table if exists message cascade
+Hibernate: drop table if exists project cascade
+Hibernate: drop table if exists project_skills cascade
+Hibernate: drop table if exists request cascade
+Hibernate: drop table if exists skill cascade
+Hibernate: drop table if exists topic cascade
+Hibernate: create table lagalt_user (user_id serial not null, user_name varchar(50) not null, primary key (user_id))
+Hibernate: create table lagalt_user_projects (user_id integer not null, project_id integer not null, primary key (user_id, project_id))
+Hibernate: create table lagalt_user_skills (user_id integer not null, skill_id integer not null, primary key (user_id, skill_id))
+Hibernate: create table message (message_id serial not null, message_text varchar(255) not null, message_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP not null, project_id integer, user_id integer, primary key (message_id))
+Hibernate: create table project (project_id serial not null, project_owner varchar(50) not null, project_purpose varchar(255), project_repo_url varchar(255), project_stage varchar(30) default 'initial' not null, project_title varchar(50) not null, topic_id integer, primary key (project_id))
+Hibernate: create table project_skills (project_id integer not null, skill_id integer not null, primary key (project_id, skill_id))
+Hibernate: create table request (request_id serial not null, request_text varchar(255) not null, project_id integer, user_id integer, primary key (request_id))
+Hibernate: create table skill (skill_id serial not null, skill_name varchar(50) not null, primary key (skill_id))
+Hibernate: create table topic (topic_id serial not null, topic_name varchar(50) not null, primary key (topic_id))
+Hibernate: alter table if exists lagalt_user add constraint UK_qr6ec9cfuc1ft1hsds3mhd2mc unique (user_name)
+Hibernate: alter table if exists project add constraint UK_8w0bbgb9gu8el4osk4091oqqv unique (project_title)
+Hibernate: alter table if exists skill add constraint UK_1ledx6hfgc5c7ht0js8bmdqs0 unique (skill_name)
+Hibernate: alter table if exists lagalt_user_projects add constraint FKt4noww26jd60l8tinwbxupum9 foreign key (project_id) references project
+Hibernate: alter table if exists lagalt_user_projects add constraint FK9a1cgflf11x3ter2meip7kk94 foreign key (user_id) references lagalt_user
+Hibernate: alter table if exists lagalt_user_skills add constraint FKbls9pcwcd49l6cc6h6yuc4kxs foreign key (skill_id) references skill
+Hibernate: alter table if exists lagalt_user_skills add constraint FKf7mpw64im0x95b7q7v0xa266w foreign key (user_id) references lagalt_user
+Hibernate: alter table if exists message add constraint FK6rdq6kr4628grwvpxyuwnk0er foreign key (project_id) references project
+Hibernate: alter table if exists message add constraint FKfefs80jmne4vmp8c5h6xvlnch foreign key (user_id) references lagalt_user
+Hibernate: alter table if exists project add constraint FK4qx3ehgfpk6owgmi05bxdl6wv foreign key (topic_id) references topic
+Hibernate: alter table if exists project_skills add constraint FK79wlc9nj5o6m744darcl6okej foreign key (skill_id) references skill
+Hibernate: alter table if exists project_skills add constraint FKmwdeg5ekyeabf6iuyhr7i9mkp foreign key (project_id) references project
+Hibernate: alter table if exists request add constraint FKkvq26sm6o0fejk6syyfhygl1q foreign key (project_id) references project
+Hibernate: alter table if exists request add constraint FK93buqw7ugnaqggnw3b67mw05i foreign key (user_id) references lagalt_user
+2023-03-12T23:36:48.716+02:00  INFO 5744 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-12T23:36:48.787+02:00  INFO 5744 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12T23:36:49.364+02:00 DEBUG 5744 --- [    Test worker] o.h.stat.internal.StatisticsInitiator    : Statistics initialized [enabled=false]
+2023-03-12T23:36:53.306+02:00  WARN 5744 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-12T23:36:56.752+02:00  INFO 5744 --- [    Test worker] c.lagalt.LagaltProjectApplicationTests   : Started LagaltProjectApplicationTests in 29.722 seconds (process running for 38.893)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
