@@ -1,11 +1,18 @@
 package com.lagalt.services.userServices;
 
+import com.lagalt.models.DTOs.LagaltUserDTOs.LagaltUserDTO;
+import com.lagalt.models.DTOs.ProjectsDTOs.ProjectDTO;
+import com.lagalt.models.DTOs.SkillDTOs.SkillDTO;
+import com.lagalt.models.DTOs.TopicDTOs.TopicDTO;
 import com.lagalt.models.LagaltUser;
 import com.lagalt.models.Project;
+import com.lagalt.models.Skill;
 import com.lagalt.repositories.*;
 import org.springframework.stereotype.Service;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -24,19 +31,19 @@ public class UserServiceImpl implements UserService {
     }
     @Override
     public LagaltUser findById(Integer id) {
-        return userRepository.findById(id).orElse(null);
+        return this.userRepository.findById(id).orElse(null);
     }
     @Override
     public Collection<LagaltUser> findAll() {
-        return userRepository.findAll();
+        return this.userRepository.findAll();
     }
     @Override
     public LagaltUser add(LagaltUser user) {
-        return userRepository.save(user);
+        return this.userRepository.save(user);
     }
     @Override
     public LagaltUser update(LagaltUser user) {
-        return userRepository.save(user);
+        return this.userRepository.save(user);
     }
     @Override
     public void deleteById(Integer id) {
@@ -65,5 +72,79 @@ public class UserServiceImpl implements UserService {
     @Override
     public boolean exists(Integer id) {
         return this.userRepository.existsById(id);
+    }
+
+    /////////////////
+    @Override
+    public SkillDTO findSkillByIdOfUser(Integer userId, Integer skillId) {
+        SkillDTO skillDTO = null;
+        for(Skill s : this.userRepository.findById(userId).get().getSkills())
+            if(s.getSkill_id() == skillId)
+                skillDTO = new SkillDTO(s.getSkill_id(), s.getSkill_name());
+        return skillDTO;
+    }
+    @Override
+    public Collection<SkillDTO> findSkillsOfUser(Integer userId) {
+        Set<SkillDTO> skillDTOSet = new HashSet<>();
+        for(Skill s : this.userRepository.findById(userId).get().getSkills())
+            skillDTOSet.add(new SkillDTO(s.getSkill_id(), s.getSkill_name()));
+        return skillDTOSet;
+    }
+
+    @Override
+    public Skill addSkillOnUser(Integer userId, Skill skill) {
+        return null;
+    }
+    @Override
+    public void deleteSkillByIdFromUser(Integer userId, Integer skillId) {
+
+    }
+
+    /////////////////////////
+
+    @Override
+    public ProjectDTO findProjectByIdOfUser(Integer userId, Integer projectId) {
+        ProjectDTO projectDTO = null;
+        for(Project p : this.userRepository.findById(userId).get().getProjects())
+            if(p.getProject_id() == projectId){
+                Set<LagaltUserDTO> lagaltUserDTOSet = p.getUsers().stream()
+                                                                  .map(user -> new LagaltUserDTO(user.getUser_id(),user.getUser_name()))
+                                                                  .collect(Collectors.toSet());
+                TopicDTO topicDTO = new TopicDTO(p.getTopic().getTopic_id(), p.getTopic().getTopic_name());
+                Set<SkillDTO> skillDTOSet = p.getSkills().stream()
+                                                         .map(skill -> new SkillDTO(skill.getSkill_id(), skill.getSkill_name()))
+                                                         .collect(Collectors.toSet());
+                projectDTO = new ProjectDTO(p.getProject_id(), p.getProject_title(), p.getProject_purpose(),
+                                            p.getProject_stage(), p.getProject_repo_url(), p.getProject_owner(),
+                                            lagaltUserDTOSet, topicDTO, skillDTOSet);
+            }
+        return projectDTO;
+    }
+    @Override
+    public Collection<ProjectDTO> findProjectsOfUser(Integer userId) {
+        Set<ProjectDTO> projectDTOSet = new HashSet<>();
+        for(Project p : this.userRepository.findById(userId).get().getProjects()){
+            Set<LagaltUserDTO> lagaltUserDTOSet = p.getUsers().stream()
+                    .map(user -> new LagaltUserDTO(user.getUser_id(),user.getUser_name()))
+                    .collect(Collectors.toSet());
+            TopicDTO topicDTO = new TopicDTO(p.getTopic().getTopic_id(), p.getTopic().getTopic_name());
+            Set<SkillDTO> skillDTOSet = p.getSkills().stream()
+                    .map(skill -> new SkillDTO(skill.getSkill_id(), skill.getSkill_name()))
+                    .collect(Collectors.toSet());
+            projectDTOSet.add(new ProjectDTO(p.getProject_id(), p.getProject_title(), p.getProject_purpose(),
+                                             p.getProject_stage(), p.getProject_repo_url(), p.getProject_owner(),
+                                             lagaltUserDTOSet, topicDTO, skillDTOSet));
+        }
+        return projectDTOSet;
+    }
+
+    @Override
+    public Skill addUserOnProject(Integer userId, Project project) {
+        return null;
+    }
+
+    @Override
+    public void deleteUserFromProjectById(Integer userId, Integer projectId) {
+
     }
 }

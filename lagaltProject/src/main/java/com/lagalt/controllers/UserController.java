@@ -39,4 +39,28 @@ public class UserController {
         return ResponseEntity.created(uri).build();
     }
 
+    @DeleteMapping(value="/{user_id}")
+    public void deleteUser(@PathVariable("user_id") int user_id){
+        userService.deleteById(user_id);
+    }
+
+    @GetMapping("{userId}/skills")
+    public ResponseEntity findSkillsOfUser(@PathVariable int userId){
+        return ResponseEntity.ok(userService.findSkillsOfUser(userId));
+    }
+    @GetMapping({"{userId}/skills/{skillId}"})
+    public ResponseEntity findSkillByIdOfUser(@PathVariable int userId, @PathVariable int skillId){
+        return ResponseEntity.ok(userService.findSkillByIdOfUser(userId, skillId));
+    }
+    ////////////////////////////
+    @GetMapping("{userId}/projects")
+    public ResponseEntity findProjectsOfUser(@PathVariable int userId){
+        return ResponseEntity.ok(userService.findProjectsOfUser(userId));
+    }
+    @GetMapping({"{userId}/projects/{projectId}"})
+    public ResponseEntity findProjectByIdOfUser(@PathVariable int userId, @PathVariable int projectId){
+        return ResponseEntity.ok(userService.findProjectByIdOfUser(userId, projectId));
+    }
+
+
 }
