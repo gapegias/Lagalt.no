@@ -7,7 +7,7 @@ plugins {
 jar {
     manifest {
         attributes(
-                'Main-Class': 'main/com/lagalt/LagaltProjectApplication'
+                'Main-Class': 'main/java/com/lagalt/LagaltProjectApplication'
         )
     }
 }
