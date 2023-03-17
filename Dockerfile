@@ -1,4 +1,4 @@
-FROM gradle:jdk17--corretto AS build
+FROM gradle:jdk17--alpine AS build
 WORKDIR /app
 COPY . .
 RUN gradle bootJar
