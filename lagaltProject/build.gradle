@@ -6,9 +6,8 @@ plugins {
 
 jar {
     manifest {
-        attributes (
-            'Main-Class': 'com.lagalt.LagaltProjectApplication'
-        )
+        attributes 'Main-Class': 'com.lagalt.LagaltProjectApplication'
+        attributes 'Class-Path' : configurations.compile.collect { 'lib/' + it.getName() }.join(' ')
     }
 }
 
