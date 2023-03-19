@@ -32,6 +32,12 @@ public class UserServiceImpl implements UserService {
     }
 
     // User's crud methods
+    public LagaltUserWithMoreInfoDTO findUserByName(String user_name){
+        for(LagaltUserWithMoreInfoDTO user : findAllUsers())
+            if(user.getUser_name().equals(user_name))
+                return user;
+        return null;
+    }
     // Do not use this (instead use DTO)
     @Override
     public LagaltUser findById(Integer user_id) {
