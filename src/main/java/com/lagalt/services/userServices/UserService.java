@@ -10,6 +10,7 @@ import java.util.Collection;
 public interface UserService extends CRUDService<LagaltUser, Integer> {
 
     // User's extra methods
+    LagaltUserWithMoreInfoDTO findUserByName(String user_name);
     LagaltUserWithMoreInfoDTO findUserById(Integer id);
     Collection<LagaltUserWithMoreInfoDTO> findAllUsers();
 
