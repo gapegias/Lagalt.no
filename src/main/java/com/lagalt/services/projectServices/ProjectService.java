@@ -12,6 +12,7 @@ import java.util.Collection;
 public interface ProjectService extends CRUDService<Project, Integer> {
 
     // Project's extra methods
+    ProjectDTO findProjectByTitle(String project_title);
     ProjectDTO findProjectById(Integer project_id);
     Collection<ProjectDTO> findAllProjects();
 
