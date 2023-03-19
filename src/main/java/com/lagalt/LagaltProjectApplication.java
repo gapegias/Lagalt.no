@@ -25,7 +25,7 @@ public class LagaltProjectApplication {
                 registry.addMapping("/messages").allowedOrigins("http://localhost:3000");
                 registry.addMapping("/requests").allowedOrigins("http://localhost:3000");
             }
-        }
+        };
     }
     
 
