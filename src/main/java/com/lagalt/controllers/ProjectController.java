@@ -23,8 +23,10 @@ public class ProjectController {
 
     // Project's requests
     @GetMapping
-    public ResponseEntity findAllProjects(){
-        return ResponseEntity.ok(this.projectService.findAllProjects());
+    public ResponseEntity findAllProjects(@RequestParam(required = false) String project_title){
+        if(project_title == null)
+            return ResponseEntity.ok(this.projectService.findAllProjects());
+        return ResponseEntity.ok(this.projectService.findProjectByTitle(project_title));
     }
     @GetMapping({"{project_id}"})
     public ResponseEntity findProjectByID(@PathVariable int project_id){
