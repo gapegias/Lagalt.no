@@ -23,8 +23,10 @@ public class UserController {
 
     // User's requests
     @GetMapping
-    public ResponseEntity findAllUsers(){
-        return ResponseEntity.ok(this.userService.findAllUsers());
+    public ResponseEntity findAllUsers(@RequestParam(required = false) String user_name){
+        if(user_name == null)
+            return ResponseEntity.ok(this.userService.findAllUsers());
+        return ResponseEntity.ok(this.userService.findUserByName(user_name));
     }
     @GetMapping({"{user_id}"})
     public ResponseEntity findUserById(@PathVariable int user_id){
