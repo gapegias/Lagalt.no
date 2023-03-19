@@ -31,6 +31,12 @@ public class ProjectServiceImpl implements ProjectService{
     }
 
     // Project's crud methods
+    public ProjectDTO findProjectByTitle(String project_title){
+        for(ProjectDTO project : findAllProjects())
+            if(project.getProject_title().equals(project_title))
+                return project;
+        return null;
+    }
     // Do not use this (instead use DTO)
     @Override
     public Project findById(Integer project_id) {
