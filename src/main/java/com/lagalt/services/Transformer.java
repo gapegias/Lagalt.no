@@ -20,7 +20,7 @@ public class Transformer {
             return null;
         Set<ProjectDTO> projectDTOSet = projectSetToProjectDTOSet(user.getProjects());
         Set<SkillDTO> skillDTOSet = skillSetToSkillDTOSet(user.getSkills());
-        return  new LagaltUserWithMoreInfoDTO(user.getUser_id(),user.getUser_name(), skillDTOSet, projectDTOSet);
+        return  new LagaltUserWithMoreInfoDTO(user.getUser_id(),user.getUser_name(), user.getUser_about_me(), skillDTOSet, projectDTOSet);
     }
     public static Set<LagaltUserDTO> lagaltUserSetToLagaltUserDTOSet(Set<LagaltUser> users){
         return users.stream().map(user -> lagaltUserToLagaltUserDTO(user)).collect(Collectors.toSet());
