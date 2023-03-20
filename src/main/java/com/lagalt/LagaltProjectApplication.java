@@ -2,11 +2,10 @@ package com.lagalt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-
 
 @SpringBootApplication
 public class LagaltProjectApplication {
@@ -19,14 +18,9 @@ public class LagaltProjectApplication {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/projects").allowedOrigins("http://localhost:3000");
-                registry.addMapping("/users").allowedOrigins("http://localhost:3000");
-                registry.addMapping("/skills").allowedOrigins("http://localhost:3000");
-                registry.addMapping("/messages").allowedOrigins("http://localhost:3000");
-                registry.addMapping("/requests").allowedOrigins("http://localhost:3000");
+                registry.addMapping("/**").allowedMethods("HEAD", "GET", "PUT", "POST", "DELETE", "PATCH");
+              
             }
         };
     }
-    
-
 }
