@@ -47,7 +47,7 @@ Basic development, creating a **database**, an **API** and a **website** that ma
 - **Login user** has the same rights as a **non-login user** and much more like making requests to join projects, so they 
 can be added to them or even create their own projects. A **login user** can be:
     - **Project member** and they have access to other projects’ information like files repository and chat.
-    - **Project owner** and they can add users after a request, remove users, change projects’ information and even delete projects (change project’s stage to completed).
+    - **Project owner** and they can add users after a request, remove users, change projects’ information and even delete projects. We decided to add a field called **stage** to project table, which will be initiazed to **"initial"** when a project is created and change to **"completed"** when it ends instead of deleting it.
 
 **Website’s View**
 
