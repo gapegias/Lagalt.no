@@ -39,15 +39,15 @@ Understanding social network users’ needs, especially reddit, and find them ef
 
 **Complexity Level**
 
-Basic development, creating a database, an API and a website that makes requests on it.
+Basic development, creating a **database**, an **API** and a **website** that makes requests on it.
 
 **Roles**
 
 - **Non-login user** can navigate through pages without joining projects’ chats and seeing fewer information about them.
 - **Login user** has the same rights as a **non-login user** and much more like making requests to join projects, so they 
 can be added to them or even create their own projects. A login user can be:
-      * **Project member** and they have access to other projects’ information like files repository and chat.
-      * **Project owner** and they can add users after a request, remove users, change projects’ information and even delete projects (change project’s stage to completed).
+         * **Project member** and they have access to other projects’ information like files repository and chat.
+         * **Project owner** and they can add users after a request, remove users, change projects’ information and even delete projects (change project’s stage to completed).
 
 **Website’s View**
 
