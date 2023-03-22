@@ -56,4 +56,10 @@ can be added to them or even create their own projects. A **login user** can be:
 - Project page
 - Create-project page
 
-**More**
+## **Database Architecture**
+
+We follow the architecture in the below picture:
+
+<img src="/pictures/Entity_Diagram_Dark_Mode.png">
+
+## **More**
