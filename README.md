@@ -56,9 +56,21 @@ can be added to them or even create their own projects. A **login user** can be:
 - Project page
 - Create-project page
 
-## **Database Architecture**
+## **Database Schema**
 
-We follow the architecture in the below picture:
+We follow the architecture in the below picture. There are:
+- 5 tables and these are:
+    - lagalt_user
+    - project
+    - skill
+    - message
+    - request 
+- 5 join tables (which represent the Many To Many relationship in 2 tables) and the are:
+    - lagalt_user_skills (owner lagalt_user)
+    - lagalt_user_projects (owner project)
+    - projects_skills (owner project)
+    - message_projects (owner project)
+    - request_projects (owner project)
 
 <img src="/pictures/Entity_Diagram_Dark_Mode.png">
 
