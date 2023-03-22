@@ -11,7 +11,7 @@ public interface UserService extends CRUDService<LagaltUser, Integer> {
 
     // User's extra methods
     LagaltUserWithMoreInfoDTO findUserByName(String user_name);
-    LagaltUserWithMoreInfoDTO findUserById(Integer id);
+    LagaltUserWithMoreInfoDTO findUserById(Integer user_id);
     Collection<LagaltUserWithMoreInfoDTO> findAllUsers();
 
     // User's skills methods
