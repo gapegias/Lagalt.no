@@ -97,7 +97,8 @@ For each table we created an api endpoint to fetch and manipulate database's dat
 <img src="/pictures/request_requests.PNG">
 
 ## **Architecture layers to build the database and create API**
-We follow the architecture in the below picture
+
+We define that everything is separated in layers, and the upper layers are abstractions of the lower ones, that's why every layer should only reference the immediate lower layer. See the below picture.
 
 <img src="/pictures/backend_architecture.png">
 
