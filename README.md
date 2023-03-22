@@ -46,6 +46,7 @@ Basic development, creating a **database**, an **API** and a **website** that ma
 1. **Non-login user** can navigate through pages without joining projects’ chats and seeing fewer information about them.
 2. **Login user** has the same rights as a **non-login user** and much more like making requests to join projects, so they 
 can be added to them or even create their own projects. A login user can be:
+        
         * Project member and they have access to other projects’ information like files repository and chat.
         * **Project owner** and they can add users after a request, remove users, change projects’ information and even delete projects (change project’s stage to completed).
 
