@@ -16,10 +16,10 @@ See website here:
 ## **Set up the development environment**
 Backend:
 1. IntelliJ (with Java 17) using:
-    * Spring Web
-    * Spring Data JPA
-    * PostgreSQL
-    * Lombok
+      * Spring Web
+      * Spring Data JPA
+      * PostgreSQL
+      * Lombok
 2. PostgreSQL with PgAdmin
 3. Docker
 Frontend:
