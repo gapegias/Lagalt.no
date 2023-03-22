@@ -71,14 +71,26 @@ We follow the architecture in the below picture. There are:
 <img src="/pictures/Entity_Diagram_Dark_Mode.png">
 
 ## **API URLs and requests**
-For each table we created and api endpoint to fetch and manipulate database's data. The endpooints are (prefix: https://woozy-agreement-production-a098.up.railway.app):
+For each table we created an api endpoint to fetch and manipulate database's data. The endpooints and their requests are (prefix: https://woozy-agreement-production-a098.up.railway.app):
 - usersUrl: https://woozy-agreement-production-a098.up.railway.app/users
+
+<img src="/pictures/user_requests.PNG">
+
 - projectsUrl: https://woozy-agreement-production-a098.up.railway.app/projects
+
+<img src="/pictures/project_requests.PNG">
+
 - skillsUrl: https://woozy-agreement-production-a098.up.railway.app/skills
+
+<img src="/pictures/skill_requests.PNG">
+
 - messagesUrl: https://woozy-agreement-production-a098.up.railway.app/messages
+
+<img src="/pictures/message_requests.PNG">
+
 - requestsUrl: https://woozy-agreement-production-a098.up.railway.app/requests
 
-
+<img src="/pictures/request_requests.PNG">
 
 
 
