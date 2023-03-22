@@ -34,15 +34,12 @@ Make sure you have the following tools available.
 ## **Requirements for the Lagalt.no-Project**
 
 **Primary Goal**
-
 Understanding social network users’ needs, especially reddit, and find them efficient solutions.
 
 **Complexity Level**
-
 Basic development, creating a **database**, an **API** and a **website** that makes requests on it.
 
 **Roles**
-
 - **Non-login user** can navigate through pages without joining projects’ chats and seeing fewer information about them.
 - **Login user** has the same rights as a **non-login user** and much more like making requests to join projects, so they 
 can be added to them or even create their own projects. A **login user** can be:
@@ -50,7 +47,6 @@ can be added to them or even create their own projects. A **login user** can be:
     - **Project owner** and they can add users after a request, remove users, change projects’ information and even delete projects. We decided to add a field called **stage** to project table, which will be initiazed to **"initial"** when a project is created and change to **"completed"** when it ends instead of deleting it.
 
 **Website’s View**
-
 - Home page
 - Profile page
 - Project page
