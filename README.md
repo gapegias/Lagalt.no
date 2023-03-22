@@ -16,7 +16,7 @@ See website here:
 ## **Set up the development environment**
 Make sure you have the following tools available.
 
-Backend:
+**Backend**:
 1. IntelliJ (with Java 17) using:
       * Spring Web
       * Spring Data JPA
@@ -25,8 +25,35 @@ Backend:
 2. PostgreSQL (with PgAdmin)
 3. Docker
 
-Frontend:
+**Frontend:**
 1. NPM/Node.js (LTS – Long Term Support version)
 2. React CRA (create-react-app)
 3. Visual Studio Code Text Editor/ IntelliJ
 4. Browser Developer Tools for testing and debugging
+
+## **Requirements for the Lagalt.no-Project**
+
+**Primary Goal**
+
+Understanding social network users’ needs, especially reddit, and find them efficient solutions.
+
+**Complexity Level**
+
+Basic development, creating a database, an API and a website that makes requests on it.
+
+**Roles**
+
+- **Non-login user** can navigate through pages without joining projects’ chats and seeing fewer information about them.
+- **Login user** has the same rights as a **non-login user** and much more like making requests to join projects, so they 
+can be added to them or even create their own projects. A login user can be:
+      * **Project member** and they have access to other projects’ information like files repository and chat.
+      * **Project owner** and they can add users after a request, remove users, change projects’ information and even delete projects (change project’s stage to completed).
+
+**Website’s View**
+
+- Home page
+- Profile page
+- Project page
+- Create-project page
+
+**More**
