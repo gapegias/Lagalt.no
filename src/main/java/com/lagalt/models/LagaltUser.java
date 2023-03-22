@@ -21,6 +21,8 @@ public class LagaltUser {
     private String user_name;
     @Column(name = "user_about_me")
     private String user_about_me;
+    @Column(name = "user_hide")
+    private boolean user_hide;
 
     //Table's relationships
     @ManyToMany(mappedBy = "users") // owned
