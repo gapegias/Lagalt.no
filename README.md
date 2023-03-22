@@ -34,12 +34,15 @@ Make sure you have the following tools available.
 ## **Requirements for the Lagalt.no-Project**
 
 **Primary Goal**
+
 Understanding social network users’ needs, especially reddit, and find them efficient solutions.
 
 **Complexity Level**
+
 Basic development, creating a **database**, an **API** and a **website** that makes requests on it.
 
 **Roles**
+
 - **Non-login user** can navigate through pages without joining projects’ chats and seeing fewer information about them.
 - **Login user** has the same rights as a **non-login user** and much more like making requests to join projects, so they 
 can be added to them or even create their own projects. A **login user** can be:
@@ -47,6 +50,7 @@ can be added to them or even create their own projects. A **login user** can be:
     - **Project owner** and they can add users after a request, remove users, change projects’ information and even delete projects. We decided to add a field called **stage** to project table, which will be initiazed to **"initial"** when a project is created and change to **"completed"** when it ends instead of deleting it.
 
 **Website’s View**
+
 - Home page
 - Profile page
 - Project page
@@ -74,23 +78,23 @@ We follow the architecture in the below picture. There are:
 For each table we created an api endpoint to fetch and manipulate database's data. The endpooints and their requests are (prefix: https://woozy-agreement-production-a098.up.railway.app):
 - usersUrl: https://woozy-agreement-production-a098.up.railway.app/users
 
-<img src="/pictures/user_requests.PNG">
+<img src="/pictures/user_requests.png">
 
 - projectsUrl: https://woozy-agreement-production-a098.up.railway.app/projects
 
-<img src="/pictures/project_requests.PNG">
+<img src="/pictures/project_requests.png">
 
 - skillsUrl: https://woozy-agreement-production-a098.up.railway.app/skills
 
-<img src="/pictures/skill_requests.PNG">
+<img src="/pictures/skill_requests.png">
 
 - messagesUrl: https://woozy-agreement-production-a098.up.railway.app/messages
 
-<img src="/pictures/message_requests.PNG">
+<img src="/pictures/message_requests.png">
 
 - requestsUrl: https://woozy-agreement-production-a098.up.railway.app/requests
 
-<img src="/pictures/request_requests.PNG">
+<img src="/pictures/request_requests.png">
 
 
 
