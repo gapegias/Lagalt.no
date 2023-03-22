@@ -96,6 +96,10 @@ For each table we created an api endpoint to fetch and manipulate database's dat
 
 <img src="/pictures/request_requests.PNG">
 
+## **Archietecture layers to build the database and create API**
+We follow the architecture in the below picture
+
+<img src="/pictures/backend_architecture.png">
 
 
 
