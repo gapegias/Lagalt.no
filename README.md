@@ -68,7 +68,7 @@ We follow the architecture in the below picture. There are:
 - and 5 join tables (which represent the Many To Many relationship in 2 tables) and these are:
     - lagalt_user_skills (owner lagalt_user)
     - lagalt_user_projects (owner project)
-    - projects_skills (owner project)
+    - project_skills (owner project)
     - message_projects (owner project)
     - request_projects (owner project)
 
