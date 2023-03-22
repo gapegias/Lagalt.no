@@ -14,13 +14,19 @@ will offer the capability of both extending existing as well as creating new com
 See website here: 
 
 ## **Set up the development environment**
+Make sure you have the following tools available.
+
 Backend:
 1. IntelliJ (with Java 17) using:
       * Spring Web
       * Spring Data JPA
       * PostgreSQL
       * Lombok
-2. PostgreSQL with PgAdmin
+2. PostgreSQL (with PgAdmin)
 3. Docker
+
 Frontend:
-1. dokimi
+1. NPM/Node.js (LTS – Long Term Support version)
+2. React CRA (create-react-app)
+3. Visual Studio Code Text Editor/ IntelliJ
+4. Browser Developer Tools for testing and debugging
