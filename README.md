@@ -58,7 +58,7 @@
   <details>
     <summary><b><h3>Complexity Level</h3></b></summary><blockquote>
   
-    Basic development, creating a **database, an **API and a **website that makes requests on it.
+    Basic development, creating a **database**, an **API** and a **website** that makes requests on it.
   </details>
       
   <details>
@@ -67,7 +67,9 @@
     • <b>Non-login user</b> can navigate through pages without joining projects’ chats and seeing fewer information about them.
     • <b>Login user</b> has the same rights as a **non-login user** and much more like making requests to join projects, so they can be added to them or even create their own projects. A <b>login user</b> can be:
     • <b>Project member</b> and they have access to other projects’ information like files repository and chat.
-    • <b>Project owner</b> and they can add users after a request, remove users, change projects’ information and even delete projects. We decided to add a field called <b>stage</b> to project table, which will be initiazed to <b>"initial"</b> when a project is created and change to <b>"completed"</b> when it ends instead of deleting it.
+    • <b>Project owner</b> and they can add users after a request, remove users, change projects’ information and even delete projects. 
+  
+  We decided to add a field called <b>stage</b> to project table, which will be initiazed to <b>"initial"</b> when a project is created and change to <b>"completed"</b> when it ends instead of deleting it.
   </details>
       
   <details>
