@@ -2,11 +2,11 @@
 
 ## Contributors
 <details>
-  <summary>unhide</summary>
-  - George Tzafilkos
-  - George Pegias 
-  - Nomikos Kampourakis
-  - Giannis Tripodis
+ <summary>unhide</summary>
+- George Tzafilkos
+- George Pegias 
+- Nomikos Kampourakis
+- Giannis Tripodis
 </details>
  
 ## **Idea**
