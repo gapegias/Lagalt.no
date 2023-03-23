@@ -2,6 +2,7 @@
 
 <details>
   <summary><b><h2>Contributors</h2></b></summary><blockquote>
+  <br>
   
   * George Tzafilkos
   * George Pegias 
