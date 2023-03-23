@@ -136,7 +136,7 @@
     
    ---
 
-   <img src="/pictures/user_requests.PNG">
+   <img src="/pictures/user_requests.PNG"> 
   </details>
   
   <details>
@@ -144,7 +144,7 @@
     
    ---
 
-   <img src="/pictures/project_requests.PNG">
+   <img src="/pictures/project_requests.PNG"> 
   </details>
   
   <details>
@@ -152,7 +152,7 @@
     
    ---
 
-   <img src="/pictures/skill_requests.PNG">
+   <img src="/pictures/skill_requests.PNG"> 
   </details>
     
   <details>
@@ -160,7 +160,7 @@
     
    ---
 
-   <img src="/pictures/message_requests.PNG">
+   <img src="/pictures/message_requests.PNG"> 
   </details>
     
   <details>
@@ -195,7 +195,7 @@
     
    ---
   
-  Steps:
+  **Steps:**
   
  1. Push our API code (see folder Backend) to a new project repository on github   
  2. Make an account on Railway (link: https://railway.app)
