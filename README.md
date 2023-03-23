@@ -1,4 +1,4 @@
-# **Lagalt.no-Project**
+# **Lagalt.no-Project (See website here: )**
 ---
 
 <details>
@@ -21,7 +21,6 @@
   It will have communities for users who have interest in **music**, **films**, **game** and **web development** (contain existing projects) and
   will offer the capability of both extending existing as well as creating new communities according to users’ interests.
 
-  See website here: 
 </details>
 
 <details>
