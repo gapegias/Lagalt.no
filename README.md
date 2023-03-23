@@ -174,14 +174,18 @@
 
 </details>
 
-## **Architecture layers to build the database and create API**
+<details>
+  <summary><b><h2>Architecture Layers To Build Database & Create API</h2></b></summary><blockquote>
+    
+   ---
 
-We define that everything is separated in layers, and the upper layers are abstractions of the lower ones, that's why every layer should only reference the immediate lower layer. See the below picture.
+  We define that everything is separated in layers, and the upper layers are abstractions of the lower ones, that's why every layer should only reference the immediate lower layer. See the below picture.
 
-<img src="/pictures/backend_architecture.png">
+  <img src="/pictures/backend_architecture.png">
 
-- **Models:** They are the objects that contain all the data logic. Basically, they are the tables of our database.
-- **Repositories:** They are the objects that are gateways between our business layer and data mapping layer, which is the layer that accesses the database and does the operations. Basically, they are an abstraction to our database access.
-- **DTOs:** Data Transfer Objects are objects that carry data between processes in order to reduce the number of methods calls. Their main purpose is to reduce roundtrips to the server by batching up multiple parameters in a single call.
-- **Services:** They are the objects that provide an API to our business logic and they are the only ones with access to the repositories. Otherwise, they violate the Dependency Inversion Principle (D in SOLID). 
-- **Controllers:** They are the objects that are work as gateways between your input and the business logic, they decide what to do with the input and how to output the response.
+ * **Models:** They are the objects that contain all the data logic. Basically, they are the tables of our database.
+ * **Repositories:** They are the objects that are gateways between our business layer and data mapping layer, which is the layer that accesses the database and does the operations. Basically, they are an abstraction to our database access.
+ * **DTOs:** Data Transfer Objects are objects that carry data between processes in order to reduce the number of methods calls. Their main purpose is to reduce roundtrips to the server by batching up multiple parameters in a single call.
+ * **Services:** They are the objects that provide an API to our business logic and they are the only ones with access to the repositories. Otherwise, they violate the Dependency Inversion Principle (D in SOLID). 
+ * **Controllers:** They are the objects that are work as gateways between your input and the business logic, they decide what to do with the input and how to output the response.
+</details>
