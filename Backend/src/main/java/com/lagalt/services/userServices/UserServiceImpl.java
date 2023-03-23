@@ -69,7 +69,7 @@ public class UserServiceImpl implements UserService {
             existed_user.setUser_name(user.getUser_name());
         // If about_me is given, change it
         if(user.getUser_about_me() != null)
-            existed_user.setUser_name(user.getUser_about_me());
+            existed_user.setUser_about_me()(user.getUser_about_me());
         // If user_hide is different from previous one, change it
         if(user.isUser_hide() != existed_user.isUser_hide())
             existed_user.setUser_hide(user.isUser_hide());
