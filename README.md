@@ -1,12 +1,11 @@
 # **Lagalt.no-Project**
 
-## Contributors
 <details>
- <summary>unhide</summary>
-  - George Tzafilkos
-  - George Pegias 
-  - Nomikos Kampourakis
-  - Giannis Tripodis
+ <summary>## Contributors</summary>
+    - George Tzafilkos
+    - George Pegias 
+    - Nomikos Kampourakis
+    - Giannis Tripodis
 </details>
  
 ## **Idea**
