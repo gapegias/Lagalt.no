@@ -103,23 +103,27 @@
   </details>
 </details>
 
-## **Database Schema**
+<details>
+  <summary><b><h2>Database Schema</h2></b></summary><blockquote>
+    
+   ---
 
-We follow the architecture in the below picture. There are:
-- 5 tables and these are:
-    - lagalt_user
-    - project
-    - skill
-    - message
-    - request 
-- and 5 join tables (which represent the Many To Many relationship in 2 tables) and these are:
-    - lagalt_user_skills (owner lagalt_user)
-    - lagalt_user_projects (owner project)
-    - project_skills (owner project)
-    - message_projects (owner project)
-    - request_projects (owner project)
+ We follow the architecture in the below picture. There are:
+ * 5 tables and these are:
+     * lagalt_user
+     * project
+     * skill
+     * message
+     * request 
+ * and 5 join tables (which represent the Many To Many relationship in 2 tables) and these are:
+     * lagalt_user_skills (owner lagalt_user)
+     * lagalt_user_projects (owner project)
+     * project_skills (owner project)
+     * message_projects (owner project)
+     * request_projects (owner project)
 
-<img src="/pictures/Entity_Diagram_Dark_Mode.png">
+ <img src="/pictures/Entity_Diagram_Dark_Mode.png">
+</details>
 
 ## **API URLs & Requests**
 For each table we created an api endpoint to fetch and manipulate database's data. The endpooints and their requests are (prefix: https://woozy-agreement-production-a098.up.railway.app):
