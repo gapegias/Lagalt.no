@@ -212,7 +212,7 @@
  
  7. Make the necessary changes in our application.java file with main static method.
   
-  <img src="/pictures/application.java.png">
+  <img src="/pictures/application.java.png"> 
  
  8. Make the necessary changes in file application.properties.
  
