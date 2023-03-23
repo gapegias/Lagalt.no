@@ -1,5 +1,4 @@
-<h1>**Lagalt.no-Project**</h1>
-
+# **Lagalt.no-Project**
 ---
 
 <details>
