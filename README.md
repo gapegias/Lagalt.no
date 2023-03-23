@@ -18,24 +18,33 @@
 
   See website here: 
 </details>
- 
-## **Set up the development environment**
-Make sure you have the following tools available.
 
-**Backend**:
-1. IntelliJ (with Java 17) using:
-      * Spring Web
-      * Spring Data JPA
-      * PostgreSQL
-      * Lombok
-2. PostgreSQL (with PgAdmin)
-3. Docker
-
-**Frontend:**
-1. NPM/Node.js (LTS – Long Term Support version)
-2. React CRA (create-react-app)
-3. Visual Studio Code Text Editor/ IntelliJ
-4. Browser Developer Tools for testing and debugging
+<details>
+  <summary><b><h2>Set Up Development Environment</h2></b></summary><blockquote>
+  
+  Make sure you have the following tools available.
+  
+  <details>
+    <summary><b><h3>Backend</h3></b></summary><blockquote>
+  
+    1. IntelliJ (with Java 17) using:
+        * Spring Web
+        * Spring Data JPA
+        * PostgreSQL
+        * Lombok
+    2. PostgreSQL (with PgAdmin)
+    3. Docker
+  </details>
+  
+  <details>
+    <summary><b><h3>Frontend</h3></b></summary><blockquote>
+  
+    1. NPM/Node.js (LTS – Long Term Support version)
+    2. React CRA (create-react-app)
+    3. Visual Studio Code Text Editor/ IntelliJ
+    4. Browser Developer Tools for testing and debugging
+  </details> 
+</details>
 
 ## **Requirements for the Lagalt.no-Project**
 
