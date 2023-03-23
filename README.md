@@ -175,7 +175,7 @@
 </details>
 
 <details>
-  <summary><b><h2>Architecture Layers To Build Database & Create API</h2></b></summary><blockquote>
+  <summary><b><h2>Architecture Layers To Build Database & Create API (locally)</h2></b></summary><blockquote>
     
    ---
 
@@ -188,4 +188,13 @@
  * **DTOs:** Data Transfer Objects are objects that carry data between processes in order to reduce the number of methods calls. Their main purpose is to reduce roundtrips to the server by batching up multiple parameters in a single call.
  * **Services:** They are the objects that provide an API to our business logic and they are the only ones with access to the repositories. Otherwise, they violate the Dependency Inversion Principle (D in SOLID). 
  * **Controllers:** They are the objects that are work as gateways between your input and the business logic, they decide what to do with the input and how to output the response.
+</details>
+  
+<details>
+  <summary><b><h2>Deploy API code in Railway (online)</h2></b></summary><blockquote>
+    
+   ---
+  
+  Steps:
+  
 </details>
