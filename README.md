@@ -58,7 +58,7 @@
   <details>
     <summary><b><h3>Complexity Level</h3></b></summary><blockquote>
   
-    Basic development, creating a **database**, an **API** and a **website** that makes requests on it.
+    Basic development, creating a \*\*database\*\*, an \*\*PI\*\* and a \*\*website\*\* that makes requests on it.
   </details>
       
   <details>
