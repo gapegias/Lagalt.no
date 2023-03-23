@@ -1,10 +1,13 @@
 # **Lagalt.no-Project**
 
-## Contributors:
- - George Tzafilkos
- - George Pegias 
- - Nomikos Kampourakis
- - Giannis Tripodis
+## Contributors
+<details>
+  <summary>unhide</summary>
+  - George Tzafilkos
+  - George Pegias 
+  - Nomikos Kampourakis
+  - Giannis Tripodis
+</details>
  
 ## **Idea**
 Create a website which it will be similar to reddit website (link: https://www.reddit.com).
