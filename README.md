@@ -209,15 +209,19 @@
   <img src="/pictures/addGithub_repo.png">
  
  6. Generate a domain (URL) for our API (click on Github repo → on navigate bar choose settings → on domain section in enviroment section choose generator)
+ 
+ 7. Make the necessary changes in our application.java file with main static method.
   
- 7. Make the necessarychanges in file application.properties
+  <img src="/pictures/a.png">
+ 
+ 8. Make the necessary changes in file application.properties.
  
   <img src="/pictures/application.properies.png">
  
- 8. Add a new file called DockerFile.
+ 9. Add a new file called DockerFile.
  
   <img src="/pictures/DockerFile.png"> 
   
- 9. Automatically, our code builded and deployed API URL. 
+ 10. Automatically, our code builded and deployed API URL. 
   
 </details>
