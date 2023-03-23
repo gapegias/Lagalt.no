@@ -2,10 +2,10 @@
 
 <details>
   <summary>Contributors</summary>
-  * George Tzafilkos
-  * George Pegias 
-  * Nomikos Kampourakis
-  * Giannis Tripodis
+      * George Tzafilkos
+    * George Pegias 
+   * Nomikos Kampourakis
+        * Giannis Tripodis
 </details>
  
 ## **Idea**
