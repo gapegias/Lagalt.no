@@ -1,8 +1,7 @@
 # **Lagalt.no-Project**
 
 <details>
-  <summary>Contributors</summary>
-  ## Contributors
+  <summary>Contributors</summary><blockquote>
   * George Tzafilkos
   * George Pegias 
   * Nomikos Kampourakis
