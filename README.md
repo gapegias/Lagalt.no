@@ -196,5 +196,22 @@
    ---
   
   Steps:
-  1.
+  
+ 1. Push our API code (see folder Backend) to a new project repository on github   
+ 2. Make an account on Railway (link: https://railway.app)
+ 3. Create a new railway project  
+ 4. Add a new database (we used PostgreSQL) on our railway project (New → Database → Add PostgreSQL)
+ 
+ <img src="/pictures/b.png">
+ 
+ 5. Add our github repository on our railway project (New → GitHub Repo → Choose GitHub repo)
+ 
+ <img src="/pictures/b.png">
+ 
+ 6. In github repo on our railway project choose, generate domain for our API (click on Github repo → on navigate bar choose settings → on domain section in enviroment section choose generator)
+  
+ 7. Change file application properties and add a new file called DockerFile.
+  
+ 8. Automatically, our code builded and deployed API URL 
+  
 </details>
