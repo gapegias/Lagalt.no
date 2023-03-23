@@ -51,14 +51,12 @@
   
   <details>
     <summary><b><h3>Primary Goal</h3></b></summary><blockquote>
-  
     Understanding social network users’ needs, especially reddit, and find them efficient solutions.
   </details>
   
   <details>
     <summary><b><h3>Complexity Level</h3></b></summary><blockquote>
-  
-    Basic development, creating a \*\*database\*\*, an \*\*PI\*\* and a \*\*website\*\* that makes requests on it.
+    Basic development, creating a **database**, an **API** and a **website** that makes requests on it.
   </details>
       
   <details>
