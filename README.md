@@ -72,8 +72,7 @@
       
   <details>
     <summary><b><h3>Website’s View</h3></b></summary><blockquote>
-  
-      * Home page
+    * Home page
         * Profile page
           * Project page
             * Create-project page
