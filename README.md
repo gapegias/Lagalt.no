@@ -181,6 +181,7 @@
   We define that everything is separated in layers, and the upper layers are abstractions of the lower ones, that's why every layer should only reference the immediate lower layer. See the below picture.
 
   <img src="/pictures/backend_architecture.png">
+  
 
  * **Models:** They are the objects that contain all the data logic. Basically, they are the tables of our database.
  * **Repositories:** They are the objects that are gateways between our business layer and data mapping layer, which is the layer that accesses the database and does the operations. Basically, they are an abstraction to our database access.
