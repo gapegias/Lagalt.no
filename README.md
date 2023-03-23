@@ -125,27 +125,63 @@
  <img src="/pictures/Entity_Diagram_Dark_Mode.png">
 </details>
 
-## **API URLs & Requests**
-For each table we created an api endpoint to fetch and manipulate database's data. The endpooints and their requests are (prefix: https://woozy-agreement-production-a098.up.railway.app):
-- usersUrl: https://woozy-agreement-production-a098.up.railway.app/users
+<details>
+  <summary><b><h2>API URLs & Requests</h2></b></summary><blockquote>
+    
+   ---
 
-<img src="/pictures/user_requests.PNG">
+  For each table we created an api endpoint to fetch and manipulate database's data. The endpooints and their requests are (prefix: https://woozy-agreement-production-a098.up.railway.app):
+ * usersUrl: https://woozy-agreement-production-a098.up.railway.app/users
+  
+  <details>
+  <summary><b><h3>usersUrl requests</h3></b></summary><blockquote>
+    
+   ---
 
-- projectsUrl: https://woozy-agreement-production-a098.up.railway.app/projects
+   <img src="/pictures/user_requests.PNG">
+  </details>
 
-<img src="/pictures/project_requests.PNG">
+ * projectsUrl: https://woozy-agreement-production-a098.up.railway.app/projects
+  
+  <details>
+  <summary><b><h3>projectsUrl requests</h3></b></summary><blockquote>
+    
+   ---
 
-- skillsUrl: https://woozy-agreement-production-a098.up.railway.app/skills
+   <img src="/pictures/project_requests.PNG">
+  </details>
 
-<img src="/pictures/skill_requests.PNG">
+ * skillsUrl: https://woozy-agreement-production-a098.up.railway.app/skills
+  
+  <details>
+  <summary><b><h3>skillsUrl requests</h3></b></summary><blockquote>
+    
+   ---
 
-- messagesUrl: https://woozy-agreement-production-a098.up.railway.app/messages
+   <img src="/pictures/skill_requests.PNG">
+  </details>
 
-<img src="/pictures/message_requests.PNG">
+ * messagesUrl: https://woozy-agreement-production-a098.up.railway.app/messages
+    
+  <details>
+  <summary><b><h3>messagesUrl requests</h3></b></summary><blockquote>
+    
+   ---
 
-- requestsUrl: https://woozy-agreement-production-a098.up.railway.app/requests
+   <img src="/pictures/message_requests.PNG">
+  </details>
 
-<img src="/pictures/request_requests.PNG">
+ * requestsUrl: https://woozy-agreement-production-a098.up.railway.app/requests
+    
+  <details>
+  <summary><b><h3>requestsUrl requests</h3></b></summary><blockquote>
+    
+   ---
+
+   <img src="/pictures/request_requests.PNG">
+  </details>
+
+</details>
 
 ## **Architecture layers to build the database and create API**
 
