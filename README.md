@@ -14,6 +14,8 @@
 <details>
   <summary><b><h2>Idea</h2></b></summary><blockquote>
   
+  ---
+  
   Create a website which it will be similar to reddit website (link: https://www.reddit.com).
   It will have communities for users who have interest in **music**, **films**, **game** and **web development** (contain existing projects) and
   will offer the capability of both extending existing as well as creating new communities according to users’ interests.
@@ -24,10 +26,14 @@
 <details>
   <summary><b><h2>Set Up Development Environment</h2></b></summary><blockquote>
   
+  ---
+  
   Make sure you have the following tools available.
   
   <details>
     <summary><b><h3>Backend</h3></b></summary><blockquote>
+    
+    ---
   
     1. IntelliJ (with Java 17) using:
         * Spring Web
@@ -40,6 +46,8 @@
   
   <details>
     <summary><b><h3>Frontend</h3></b></summary><blockquote>
+    
+    ---
   
     1. NPM/Node.js (LTS – Long Term Support version)
     2. React CRA (create-react-app)
@@ -51,19 +59,28 @@
 <details>
   <summary><b><h2>Requirements For Lagalt.no-Project</h2></b></summary><blockquote>
   
+  ---
+  
   <details>
     <summary><b><h3>Primary Goal</h3></b></summary><blockquote>
+    
+    ---
+    
     Understanding social network users’ needs, especially reddit, and find them efficient solutions.
   </details>
   
   <details>
     <summary><b><h3>Complexity Level</h3></b></summary><blockquote>
+    
+    ---
    
    Basic development, creating a **database**, an **API** and a **website** that makes requests on it.
   </details>
       
   <details>
     <summary><b><h3>Roles</h3></b></summary><blockquote>
+    
+    ---
   
    * <b>Non-login user</b> can navigate through pages without joining projects’ chats and seeing fewer information about them.
    * <b>Login user</b> has the same rights as a **non-login user** and much more like making requests to join projects, so they can be added to them or even create their own projects. A <b>login user</b> can be:
@@ -75,6 +92,8 @@
       
   <details>
     <summary><b><h3>Website’s View</h3></b></summary><blockquote>
+    
+    ---
     
    * Home page
    * Profile page
