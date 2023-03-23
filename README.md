@@ -133,7 +133,7 @@
   For each table we created an api endpoint to fetch and manipulate database's data. The endpooints and their requests are (prefix: https://woozy-agreement-production-a098.up.railway.app):
   
   <details>
-  <summary><b><h3>usersUrl (https://woozy-agreement-production-a098.up.railway.app/users) requests</h3></b></summary><blockquote>
+  <summary><b><h3>usersUrl requests (URL: https://woozy-agreement-production-a098.up.railway.app/users)</h3></b></summary><blockquote>
     
    ---
 
@@ -141,7 +141,7 @@
   </details>
   
   <details>
-  <summary><b><h3>projectsUrl (https://woozy-agreement-production-a098.up.railway.app/projects) requests</h3></b></summary><blockquote>
+  <summary><b><h3>projectsUrl requests (URL: https://woozy-agreement-production-a098.up.railway.app/projects)</h3></b></summary><blockquote>
     
    ---
 
@@ -149,7 +149,7 @@
   </details>
   
   <details>
-  <summary><b><h3>skillsUrl (https://woozy-agreement-production-a098.up.railway.app/skills) requests</h3></b></summary><blockquote>
+  <summary><b><h3>skillsUrl requests (URL: https://woozy-agreement-production-a098.up.railway.app/skills)</h3></b></summary><blockquote>
     
    ---
 
@@ -157,7 +157,7 @@
   </details>
     
   <details>
-  <summary><b><h3>messagesUrl (https://woozy-agreement-production-a098.up.railway.app/messages) requests</h3></b></summary><blockquote>
+  <summary><b><h3>messagesUrl requests (URL: https://woozy-agreement-production-a098.up.railway.app/messages)</h3></b></summary><blockquote>
     
    ---
 
@@ -165,7 +165,7 @@
   </details>
     
   <details>
-  <summary><b><h3>requestsUrl (https://woozy-agreement-production-a098.up.railway.app/requests) requests</h3></b></summary><blockquote>
+  <summary><b><h3>requestsUrl requests (URL: https://woozy-agreement-production-a098.up.railway.app/requests)</h3></b></summary><blockquote>
     
    ---
 
