@@ -131,50 +131,41 @@
    ---
 
   For each table we created an api endpoint to fetch and manipulate database's data. The endpooints and their requests are (prefix: https://woozy-agreement-production-a098.up.railway.app):
- * usersUrl: https://woozy-agreement-production-a098.up.railway.app/users
   
   <details>
-  <summary><b><h3>usersUrl requests</h3></b></summary><blockquote>
+  <summary><b><h3>usersUrl (https://woozy-agreement-production-a098.up.railway.app/users) requests</h3></b></summary><blockquote>
     
    ---
 
    <img src="/pictures/user_requests.PNG">
   </details>
-
- * projectsUrl: https://woozy-agreement-production-a098.up.railway.app/projects
   
   <details>
-  <summary><b><h3>projectsUrl requests</h3></b></summary><blockquote>
+  <summary><b><h3>projectsUrl (https://woozy-agreement-production-a098.up.railway.app/projects) requests</h3></b></summary><blockquote>
     
    ---
 
    <img src="/pictures/project_requests.PNG">
   </details>
-
- * skillsUrl: https://woozy-agreement-production-a098.up.railway.app/skills
   
   <details>
-  <summary><b><h3>skillsUrl requests</h3></b></summary><blockquote>
+  <summary><b><h3>skillsUrl (https://woozy-agreement-production-a098.up.railway.app/skills) requests</h3></b></summary><blockquote>
     
    ---
 
    <img src="/pictures/skill_requests.PNG">
   </details>
-
- * messagesUrl: https://woozy-agreement-production-a098.up.railway.app/messages
     
   <details>
-  <summary><b><h3>messagesUrl requests</h3></b></summary><blockquote>
+  <summary><b><h3>messagesUrl (https://woozy-agreement-production-a098.up.railway.app/messages) requests</h3></b></summary><blockquote>
     
    ---
 
    <img src="/pictures/message_requests.PNG">
   </details>
-
- * requestsUrl: https://woozy-agreement-production-a098.up.railway.app/requests
     
   <details>
-  <summary><b><h3>requestsUrl requests</h3></b></summary><blockquote>
+  <summary><b><h3>requestsUrl (https://woozy-agreement-production-a098.up.railway.app/requests) requests</h3></b></summary><blockquote>
     
    ---
 
