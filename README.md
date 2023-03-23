@@ -202,11 +202,11 @@
  3. Create a new railway project  
  4. Add a new database (we used PostgreSQL) on our railway project (New → Database → Add PostgreSQL)
  
- <img src="/pictures/addPostgreSQL.png">
+  <img src="/pictures/addPostgreSQL.png">
  
  5. Add our github repository on our railway project (New → GitHub Repo → Choose GitHub repo)
  
- <img src="/pictures/addGithub_repo.png">
+  <img src="/pictures/addGithub_repo.png">
  
  6. Generate a domain (URL) for our API (click on Github repo → on navigate bar choose settings → on domain section in enviroment section choose generator)
   
