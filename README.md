@@ -1,4 +1,4 @@
-# **Lagalt.no-Project (See website here: )**
+# **Legalt-Project (See website here: )**
 ---
 
 <details>
