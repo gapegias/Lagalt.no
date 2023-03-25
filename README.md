@@ -57,7 +57,7 @@
 </details>
 
 <details>
-  <summary><b><h2>Requirements For Lagalt.no-Project</h2></b></summary><blockquote>
+  <summary><b><h2>Requirements For Legalt-Project</h2></b></summary><blockquote>
   
   ---
   
