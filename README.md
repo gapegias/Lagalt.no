@@ -125,6 +125,59 @@
 </details>
 
 <details>
+  <summary><b><h2>Architecture Layers To Build Database & Create API (locally)</h2></b></summary><blockquote>
+    
+   ---
+
+  We define that everything is separated in layers, and the upper layers are abstractions of the lower ones, that's why every layer should only reference the immediate lower layer. See the below picture.
+
+  <img src="/pictures/backend_architecture.png">
+  
+
+ * **Models:** They are the objects that contain all the data logic. Basically, they are the tables of our database.
+ * **Repositories:** They are the objects that are gateways between our business layer and data mapping layer, which is the layer that accesses the database and does the operations. Basically, they are an abstraction to our database access.
+ * **DTOs:** Data Transfer Objects are objects that carry data between processes in order to reduce the number of methods calls. Their main purpose is to reduce roundtrips to the server by batching up multiple parameters in a single call.
+ * **Services:** They are the objects that provide an API to our business logic and they are the only ones with access to the repositories. Otherwise, they violate the Dependency Inversion Principle (D in SOLID). 
+ * **Controllers:** They are the objects that are work as gateways between your input and the business logic, they decide what to do with the input and how to output the response.
+</details>
+  
+<details>
+  <summary><b><h2>Deploy API Code To Railway (online)</h2></b></summary><blockquote>
+    
+   ---
+  
+  ### **Steps:**
+  
+ 1. Push our API code (see folder Backend) to a new project repository on github   
+ 2. Make an account on Railway (link: https://railway.app)
+ 3. Create a new railway project  
+ 4. Add a new database (we used PostgreSQL) on our railway project (New → Database → Add PostgreSQL)
+ 
+  <img src="/pictures/addPostgreSQL.png">
+ 
+ 5. Add our github repository on our railway project (New → GitHub Repo → Choose GitHub repo)
+ 
+  <img src="/pictures/addGithub_repo.png">
+ 
+ 6. Generate a domain (URL) for our API (click on Github repo → on navigate bar choose settings → on domain section in enviroment section choose generator)
+ 
+ 7. Make the necessary changes in our application.java file with main static method.
+  
+  <img src="/pictures/application.java.png"> 
+ 
+ 8. Make the necessary changes in file application.properties.
+ 
+  <img src="/pictures/application.properies.png">
+ 
+ 9. Add a new file called DockerFile.
+ 
+  <img src="/pictures/DockerFile.png"> 
+  
+ 10. Automatically, our code builded and deployed API URL. 
+  
+</details>
+  
+<details>
   <summary><b><h2>API URLs & Requests</h2></b></summary><blockquote>
     
    ---
@@ -176,57 +229,4 @@
    <img src="/pictures/request_requests.PNG">
   </details>
 
-</details>
-
-<details>
-  <summary><b><h2>Architecture Layers To Build Database & Create API (locally)</h2></b></summary><blockquote>
-    
-   ---
-
-  We define that everything is separated in layers, and the upper layers are abstractions of the lower ones, that's why every layer should only reference the immediate lower layer. See the below picture.
-
-  <img src="/pictures/backend_architecture.png">
-  
-
- * **Models:** They are the objects that contain all the data logic. Basically, they are the tables of our database.
- * **Repositories:** They are the objects that are gateways between our business layer and data mapping layer, which is the layer that accesses the database and does the operations. Basically, they are an abstraction to our database access.
- * **DTOs:** Data Transfer Objects are objects that carry data between processes in order to reduce the number of methods calls. Their main purpose is to reduce roundtrips to the server by batching up multiple parameters in a single call.
- * **Services:** They are the objects that provide an API to our business logic and they are the only ones with access to the repositories. Otherwise, they violate the Dependency Inversion Principle (D in SOLID). 
- * **Controllers:** They are the objects that are work as gateways between your input and the business logic, they decide what to do with the input and how to output the response.
-</details>
-  
-<details>
-  <summary><b><h2>Deploy API Code To Railway (online)</h2></b></summary><blockquote>
-    
-   ---
-  
-  ### **Steps:**
-  
- 1. Push our API code (see folder Backend) to a new project repository on github   
- 2. Make an account on Railway (link: https://railway.app)
- 3. Create a new railway project  
- 4. Add a new database (we used PostgreSQL) on our railway project (New → Database → Add PostgreSQL)
- 
-  <img src="/pictures/addPostgreSQL.png">
- 
- 5. Add our github repository on our railway project (New → GitHub Repo → Choose GitHub repo)
- 
-  <img src="/pictures/addGithub_repo.png">
- 
- 6. Generate a domain (URL) for our API (click on Github repo → on navigate bar choose settings → on domain section in enviroment section choose generator)
- 
- 7. Make the necessary changes in our application.java file with main static method.
-  
-  <img src="/pictures/application.java.png"> 
- 
- 8. Make the necessary changes in file application.properties.
- 
-  <img src="/pictures/application.properies.png">
- 
- 9. Add a new file called DockerFile.
- 
-  <img src="/pictures/DockerFile.png"> 
-  
- 10. Automatically, our code builded and deployed API URL. 
-  
 </details>
