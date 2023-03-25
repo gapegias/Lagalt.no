@@ -200,7 +200,7 @@
     
    ---
   
-  **Steps:**
+  ### **Steps:**
   
  1. Push our API code (see folder Backend) to a new project repository on github   
  2. Make an account on Railway (link: https://railway.app)
