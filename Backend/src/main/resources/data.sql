@@ -2,7 +2,7 @@
 INSERT INTO lagalt_user (user_name, user_hide)
      VALUES ('George Tzafilkos', false);                                                    -- 1
 INSERT INTO lagalt_user (user_name, user_about_me, user_hide)
-     VALUES ('George_Pegias', 'My name is George and I live in Athens of Greece!', false);  -- 2
+     VALUES ('George Pegias', 'My name is George and I live in Athens of Greece!', false);  -- 2
 INSERT INTO lagalt_user (user_name, user_hide)
      VALUES ('Nomikos Kampourakis', false);                                                 -- 3
 INSERT INTO lagalt_user (user_name, user_hide)
