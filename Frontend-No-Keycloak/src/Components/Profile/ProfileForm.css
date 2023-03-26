@@ -1,0 +1,100 @@
+.Profile-form-box{
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 250px;
+    background-color: #1B2E3C;
+    border-radius: 5px;
+    margin: 40px 50px 0 50px;
+    width: 80%;
+}
+
+.Name-box{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+
+
+
+.Body-box{
+    /* justify-content: space-between; */
+    display: flex;
+    background-color: #E4E5E8;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+.About-me-box{
+    /* background-color: #1B2E3C; */
+    width: 70%;
+    margin: 20px 20px 20px 20px;
+    color:#0C0C1E
+}
+
+.Skills-box{
+    width: 30%;
+    margin: 20px 20px 20px 20px;
+}
+
+.Values-box{
+    background-color: #1B2E3C;
+    width: 100%;
+    height: fit-content;
+    color: #E4E5E8;
+
+    align-items: center;
+    justify-content: center;
+    /* display: flex; */
+    border-radius: 10px;
+    padding: 5px 0 5px ;
+}
+
+.Values-box h3{
+    margin-left: 10px;
+}
+
+.Values-list{
+    list-style: none;
+    padding: 0;
+    margin: 10px 10px 10px 10px;
+}
+
+.Values-list li{
+    list-style: none;
+    display: inline-block;
+    margin: 2px 2px 2px 2px;
+    
+    /* cursor: pointer; */
+
+}
+
+.Values-item{
+    background-color: #cb2d3e;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 0 4px 2px 4px;
+    font-size: 14px;
+    /* margin: 2px; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
+
+.button-profile-bottom-box{
+    display: flex;
+    justify-content: center;
+    background-color:  #1B2E3C;
+    padding: 10px 50px 10px 50px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+    /* background: linear-gradient(to bottom right, #cb2d3e, #cb2d3e); */
+}
+
+.name-title-edit-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
