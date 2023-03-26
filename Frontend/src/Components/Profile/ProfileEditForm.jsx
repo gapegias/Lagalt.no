@@ -48,7 +48,7 @@ const ProfileEditForm = () => {
 
         if (!exists) {
             const [error, response] = await createSkill(newSkill.toUpperCase())      // Saves new skill to the API
-            if(error !== naull){
+            if(error !== null){
                 setError('Failed to create new skill.')
                 return
             }
