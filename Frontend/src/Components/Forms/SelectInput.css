@@ -1,0 +1,97 @@
+select {
+    /* Reset Select */
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 0 1em;
+    color: #0C0C1E;
+    background-color: #E4E5E8;
+    background-image: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select wrapper */
+  .select {
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 30px;
+    overflow: hidden;
+    color: #0C0C1E;
+  }
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    padding: 0, px, 0, 4px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translate(0%,-50%);
+    transition: .25s all ease;
+    pointer-events: none;
+  }
+  /* Transition */
+  .select:hover::after {
+    color: #cb2d3e;
+  }
+  
+  .add-button{
+    background-color: #1B2E3C;
+    color: #E4E5E8;
+    border: none;
+    display: flex;
+  }
+
+  .button-circle-box{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+/* 
+  .select__value-container{
+    color: #0C0C1E;
+  } */
+
+  /* .basic-multi-select{
+    background-color: aqua;
+  } */
+
+  .add-button{
+    border: none;
+    background-color:none;
+    color: #E4E5E8;
+
+  }
+
+  .add-button:hover{
+    color: #cb2d3e;
+  }
+  .select-buttons-box{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .select-buttons-box-multi{
+    display: flex;
+  }
+
+  .select-form-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .select-buttons-field{
+    display: flex;
+    flex-direction: column;
+  }
+
