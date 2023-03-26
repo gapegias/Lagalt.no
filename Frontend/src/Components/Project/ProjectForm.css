@@ -1,0 +1,143 @@
+.Project-form-box{
+    width: 80%;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 250px;
+    background-color: #1B2E3C;
+    border-radius: 5px;
+    margin: 40px 50px 0 50px;
+    /* margin: 40px 0 0 40px; */
+}
+
+.Name-box{
+    display: flex;
+    margin: 0 20px ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.Body-box{
+    display: flex;
+    background-color: #E4E5E8;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+.Details-left-box{
+    /* background-color: #1B2E3C; */
+    width: 70%;
+    margin: 20px 20px 20px 20px;
+    color:#0C0C1E
+}
+
+
+.Repository{
+    color: #0C0C1E;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: baseline;
+}
+
+.Repository a{
+    margin-left: 20px;
+}
+
+.Repo-link{
+    text-decoration: none;
+    color:#0C0C1E;
+}
+
+.Repo-link:hover{
+    text-decoration: none;
+    color: #cb2d3e;
+    font-size: 101%;
+}
+
+.Skills-box{
+    width: 30%;
+    margin: 20px 20px 20px 20px;
+    
+}
+
+.Bottom-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.owner{
+    color: #E4E5E8;
+    display: flex;
+    margin:0 20px;
+    justify-content: space-between;
+    align-items: baseline;
+    text-decoration: none;
+}
+
+.owner-link a{
+    color: #e4e5e8;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.owner-link a:hover{
+    text-decoration: none;
+    color: #cb2d3e;
+    font-size: 101%;
+}
+
+.stage{
+    color: #E4E5E8;
+    display: flex;
+    margin:0 20px 0 30px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.stage-h3{
+    /* background-color: #1B2E3C; */
+    margin-left: 20px;
+    /* border-radius: 5px; */
+    color:#E4E5E8;
+}
+
+.Members-box{
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.buttons-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.usersButton{
+    outline: none;
+    border: none;
+    /* background-color: #E4E5E8; */
+    background-color:#E4E5E8;
+    bottom: 0px;
+    color:#1B2E3C;
+    border-radius: 5px;
+    font-size: 100%;
+    margin-right: 10px;
+}
+
+.usersButton:hover{
+    outline: none;
+    border: none;
+    /* background-color: #E4E5E8; */
+    color: #cb2d3e;
+    bottom: 0px;
+    /* background-color:#cb2d3e; */
+    /* scale: 101%;s */
+    cursor: pointer;
+}
+
+.join-quit-button{
+    margin: 0 20px 0 0;
+}
