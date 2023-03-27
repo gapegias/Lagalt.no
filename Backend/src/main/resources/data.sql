@@ -10,11 +10,11 @@ INSERT INTO lagalt_user (user_name,user_about_me, user_hide)
 -- projects
 INSERT INTO project (project_title, project_purpose, project_owner, project_topic)
      VALUES ('Pac-Man, (dark themed)', 'A classic pac-man game (dark theme/halloween inspired) ', 'tzafilkos', 'GAME DEVELOPMENT'); -- 1
-     INSERT INTO project (project_title, project_purpose, project_owner, project_topic)
+INSERT INTO project (project_title, project_purpose, project_owner, project_topic)
      VALUES ('Rpg Game 2D', 'Simple RPG game for educational use', 'tzafilkos', 'GAME DEVELOPMENT'); -- 2
 INSERT INTO project (project_title, project_purpose, project_owner, project_topic)
      VALUES ('The Avengers: Funmade', 'Filming a funmade movie of first avenger movie.','nomikos', 'FILMS');   -- 3
-     INSERT INTO project (project_title, project_purpose, project_owner, project_topic)
+INSERT INTO project (project_title, project_purpose, project_owner, project_topic)
      VALUES ('Film scoring Sci-Fi', 'Soundtrack for a sci-fi short film', 'nomikos', 'MUSIC'); -- 4
 INSERT INTO project (project_title, project_owner, project_topic)
      VALUES ('Online shop for a small grocery shop', 'pegias', 'WEB DEVELOPMENT');         -- 5
@@ -23,16 +23,17 @@ INSERT INTO project (project_title,project_purpose, project_owner, project_repo_
 -- lagalt_user_projects
 INSERT INTO lagalt_user_projects (project_id, user_id)
 VALUES (1, 1), -- 1
-       (2, 1), -- 2
-       (3, 3), -- 3
-       (4, 3), -- 4
-       (5, 2), -- 5
-       (6, 4), -- 6
-       (6, 2), -- 7
-       (5, 4), -- 8
-       (4, 2), -- 9
-       (1, 2), -- 10
-       (1, 4); -- 11
+       (1, 2), -- 2
+       (1, 4), -- 3
+       (2, 1), -- 4
+       (3, 3), -- 5
+       (4, 2), -- 6
+       (4, 3), -- 7
+       (5, 2), -- 8
+       (5, 4), -- 9
+       (6, 2), -- 10
+       (6, 3), -- 11
+       (6, 4); -- 12
 -- skills
 INSERT INTO skill (skill_name)
 VALUES ('VIDEO EDITING'),              -- 1
@@ -41,8 +42,6 @@ VALUES ('VIDEO EDITING'),              -- 1
        ('PLAYING MUSICAL INSTRUMENT'), -- 4
        ('WEB PROGRAMMING'),            -- 5
        ('GAMING PROGRAMMING');         -- 6
-       
-       
 -- lagalt_user_skills
 INSERT INTO lagalt_user_skills (user_id, skill_id)
 VALUES (1, 3), -- 1
@@ -77,8 +76,8 @@ VALUES (1, 2), -- 1
        (6, 5); -- 16     
 -- requests
 INSERT INTO request (request_text, request_user_id, request_user_name)
-VALUES ('Please, add me to your project!', 1, 'tzafilkos'),    -- 1
-       ('Please, add me to your project!', 3, 'nomikos'); -- 2
+VALUES ('Please, add me to your project!', 1, 'tzafilkos'),  -- 1
+       ('Please, add me to your project!', 3, 'nomikos');    -- 2
 -- project_requests
 INSERT INTO request_projects (project_id, request_id)
 VALUES (6, 1), -- 1
@@ -86,11 +85,11 @@ VALUES (6, 1), -- 1
 -- messages
 INSERT INTO message (message_text, message_user_name)
 VALUES ('The project url is not responding.. Can u please check? 😢', 'pegias'), -- 1
-       ('Yeah we were right.. Try it now it should be ok!😄', 'tripodis'),
-       ('Yeah it works fine! Cheers..!! 😄', 'pegias'),
-       ('Hello team! 😃', 'tzafilkos'),  -- 4
-       ('Hi! 😄', 'nomikos'),   -- 5
-       ('Hello!!! 🤗', 'tripodis');   -- 6
+       ('Yeah we were right.. Try it now it should be ok!😄', 'tripodis'),       -- 2
+       ('Yeah it works fine! Cheers..!! 😄', 'pegias'),                          -- 3
+       ('Hello team! 😃', 'tzafilkos'),                                          -- 4
+       ('Hi! 😄', 'nomikos'),                                                    -- 5
+       ('Hello!!! 🤗', 'tripodis');                                              -- 6
 -- project_messages
 INSERT INTO message_projects (project_id, message_id)
 VALUES (6, 1), -- 1
