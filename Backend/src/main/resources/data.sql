@@ -56,7 +56,7 @@ VALUES (1, 3), -- 1
        (4, 1), -- 9
        (4, 2), -- 10
        (4, 3), -- 11
-       (4, 4), -- 12
+       (4, 4); -- 12
 -- project_skills
 INSERT INTO project_skills (project_id, skill_id)
 VALUES (1, 2), -- 1
