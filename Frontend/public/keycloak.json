@@ -1,8 +1,0 @@
-{
-  "realm": "lagalt-io",
-  "auth-server-url": "https://lemur-3.cloud-iam.com/auth/",
-  "ssl-required": "external",
-  "resource": "my-react-app",
-  "public-client": true,
-  "confidential-port": 0
-}
