@@ -242,6 +242,10 @@
  * Profile page
  * Project page
  * Create-project page
+  
+  ### Main component that are used by all main pages are:
+ * **NavBar**, upper bar that contains search box, login & logout button and create project button
+ * **TopicsBar**, left side bar that contains topics which are groups of project depending on their field.
     
   <img src="/pictures/component-tree.png">
     
