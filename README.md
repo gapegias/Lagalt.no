@@ -1,4 +1,4 @@
-# **Lagalt-no** (Website: https://legalt-qrcacotko-gapegias.vercel.app)
+# **Lagalt-no** (website: https://legalt-qrcacotko-gapegias.vercel.app)
 ---
 
 <details>
