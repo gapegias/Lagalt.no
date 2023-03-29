@@ -230,3 +230,21 @@
   </details>
 
 </details>
+
+<details>
+  <summary><b><h2>Component Tree</h2></b></summary><blockquote>
+    
+   ---
+  
+  ### **Main pages**
+
+ * Home page
+ * Profile page
+ * Project page
+ * Create-project page
+    
+  <img src="/pictures/component-tree.png">
+    
+</details>
+
+    
