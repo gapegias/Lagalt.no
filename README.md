@@ -237,11 +237,39 @@
    ---
   
   ### **Main pages**
+  
+  <details>
+  <summary><b><h3>Home page</h3></b></summary><blockquote>
+    
+   ---
 
- * Home page
- * Profile page
- * Project page
- * Create-project page
+   <img src="/pictures/home-page.png">
+  </details>
+    
+  <details>
+  <summary><b><h3>Profile page</h3></b></summary><blockquote>
+    
+   ---
+
+   <img src="/pictures/profile-page.png">
+  </details>
+
+  <details>
+  <summary><b><h3>Project page</h3></b></summary><blockquote>
+    
+   ---
+
+   <img src="/pictures/project-page.png">
+  </details>  
+    
+   
+  <details>
+  <summary><b><h3>Create-project page</h3></b></summary><blockquote>
+    
+   ---
+
+   <img src="/pictures/create-project-page.png">
+  </details>
   
   ### Main component that are used by all main pages are:
  * **NavBar**, upper bar that contains search box, login & logout button and create project button
