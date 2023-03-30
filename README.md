@@ -279,4 +279,10 @@
     
 </details>
 
+<details>
+  <summary><b><h2>Web-app Manual</h2></b></summary><blockquote>
     
+   ---
+
+   [Click for manual] (https://github.com/gapegias/Lagalt.no/blob/main/LAGALT.no(manual).pdf)
+</details>
