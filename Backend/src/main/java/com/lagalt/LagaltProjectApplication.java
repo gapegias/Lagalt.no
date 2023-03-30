@@ -18,7 +18,7 @@ public class LagaltProjectApplication {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**").allowedOrigins("https://legalt-fcauo5sf2-gapegias.vercel.app").allowedMethods("HEAD", "GET", "PUT", "POST", "DELETE", "PATCH");
+                registry.addMapping("/**").allowedOrigins("https://legalt-nt3460du8-gapegias.vercel.app").allowedMethods("HEAD", "GET", "PUT", "POST", "DELETE", "PATCH");
               
             }
         };
