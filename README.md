@@ -1,8 +1,6 @@
 # **Lagalt-no** 
 ---
 
-### **Website:** [Click](https://legalt-fcauo5sf2-gapegias.vercel.app/)
-
 <details>
   <summary><b><h2>Contributors</h2></b></summary><blockquote>
  
