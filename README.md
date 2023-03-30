@@ -1,5 +1,7 @@
-# **Lagalt-no** (website: [Click to see website](https://legalt-qrcacotko-gapegias.vercel.app))
+# **Lagalt-no** 
 ---
+
+(website: [Click](https://legalt-qrcacotko-gapegias.vercel.app))
 
 <details>
   <summary><b><h2>Contributors</h2></b></summary><blockquote>
