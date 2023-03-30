@@ -284,5 +284,5 @@
     
    ---
 
-   [Click for manual] (https://github.com/gapegias/Lagalt.no/blob/main/LAGALT.no(manual).pdf)
+   [Click for manual](https://github.com/gapegias/Lagalt.no/blob/main/LAGALT.no(manual).pdf)
 </details>
