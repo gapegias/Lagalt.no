@@ -286,5 +286,5 @@
     
    ---
 
-   [Click for manual](https://github.com/gapegias/Lagalt.no/blob/main/LAGALT.no(manual).pdf)
+   [Click for manual](https://github.com/gapegias/Lagalt.no/blob/main/Team%20Legalt_Team%20Java%20_document.pdf)
 </details>
