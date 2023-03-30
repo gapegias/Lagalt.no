@@ -1,0 +1,130 @@
+
+.Chat-history-box{
+    background-color: #778a98;
+    width: 90%;
+    height: 200px;
+    color: #E4E5E8;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5% ;
+    /* display: flex; */
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.Chat-history-box::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Track */
+  .Chat-history-box::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  .Chat-history-box::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  .Chat-history-box::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.title-of-box{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.line{
+    height: 2px;
+    background-color: #E4E5E8;
+}
+
+.New-message-box{
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.New-message-box input::placeholder{
+    padding: 10px;
+
+}
+
+
+.message-input-box{
+    background-color: #778a98;
+    border: none;
+    border-radius: 20px;
+    color: #E4E5E8;
+    margin: 0 20px 0 20px
+}
+
+.chat-form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%
+}
+
+::placeholder{
+    color: #E4E5E8;
+}
+
+.message-by{
+    background-color: #1B2E3C;
+    font-size: 9px;
+    /* font-style: italic; */
+    border-radius: 5px;
+    padding: 1px;
+    margin: 5px;
+    text-align: center;
+    height:fit-content ;
+}
+
+.time-stamp{
+    /* background-color: #1B2E3C; */
+    font-size: 9px;
+    font-style: italic;
+    padding: 0 1px 0 1px;
+    margin: 5px;
+}
+
+.message-ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.message-with-tag{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    text-align: left ;
+
+}
+
+.single-request{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: #E4E5E8;
+    border-style:solid;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+ul{
+    padding: 0 1%;
+}
+
+.accept-decline-box{
+    display: flex;
+    justify-content: space-evenly;
+}
